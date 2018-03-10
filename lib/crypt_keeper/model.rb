@@ -69,7 +69,7 @@ to be used for encryption"
         end
 
         crypt_keeper_fields.each do |field|
-          serialize field, encryptor
+          attribute field, :crypt, encryptor: encryptor
         end
       end
 
